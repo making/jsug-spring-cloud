@@ -14,7 +14,7 @@ import java.util.UUID;
 public class JsugProducerApplication {
 	private static final UUID id = UUID.randomUUID();
 
-	@RequestMapping(path = "/")
+	@RequestMapping("/")
 	String hello() {
 		return "Hello @" + id;
 	}

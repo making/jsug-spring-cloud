@@ -15,7 +15,7 @@ public class JsugConsumerApplication {
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping(path = "/")
+    @RequestMapping("/")
     String hello() {
         String res = restTemplate.getForObject("http://jsug-producer", String.class);
         return res + " from producer";
