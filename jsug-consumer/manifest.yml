@@ -1,0 +1,7 @@
+---
+applications:
+  - name: demo-jsug-consumer
+    path: target/jsug-consumer-0.0.1-SNAPSHOT.jar
+    buildpack: java_buildpack_offline
+    services:
+      - demo-jsug-eureka
