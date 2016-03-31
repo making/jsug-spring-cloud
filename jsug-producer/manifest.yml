@@ -1,0 +1,7 @@
+---
+applications:
+  - name: demo-jsug-producer
+    path: target/jsug-producer-0.0.1-SNAPSHOT.jar
+    buildpack: java_buildpack_offline
+    services:
+      - demo-jsug-eureka
