@@ -12,7 +12,7 @@ import java.util.UUID;
 @EnableDiscoveryClient
 @RestController
 public class JsugProducerApplication {
-	private static final UUID id = UUID.randomUUID();
+	UUID id = UUID.randomUUID();
 
 	@RequestMapping(path = "/")
 	String hello() {
